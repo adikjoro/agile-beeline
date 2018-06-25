@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', 'sans-serif';
+    overflow-x: hidden;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    width: 100%;
+}
+.intro {
+    background: url('images/agile_bg.png') center no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+.intro__logo {
+    width: 350px;
+}
+.intro__subheader {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #555;
+}
+.benefits {
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6vw;
+    height: 90vh;
+}
+.benefits__poster {
+    width: 55%;
+}
+.benefits-list {
+    width:100%;
+    margin-right: 6vw;
+}
+.benefits-list__item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    margin: 40px 0;
+    padding: 24px;
+    border: 3px solid #FF8526;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase
+}
+.benefits-list__item img {
+    width: 60px;
+    margin-right: 28px;
+}
+.frame {
+    align-items: center;
+    justify-content: center;
+}
+.frame__content {
+    text-align: center;
+}
+.frame__video {
+    border: 5px solid #FF8526;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.frame__content h3 {
+    font-size: 24px;
+    font-weight: 900;
+}
+.education {
+    align-items: center;
+    justify-content: center;
+}
+.courses-table {
+    width: 90%;
+    margin-right: 40px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #FF8526;
+}
+.courses-table thead {
+    font-weight: 700;
+    border-bottom: 1px solid rgb(255, 133, 19);
+}
+.courses-table td {
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.courses-table td:first-of-type {
+    width: 30%;
+    border-right: 1px solid rgb(255, 133, 19);
+}
+.courses-table tr:nth-of-type(even) {
+    background: #FFAE22;
+}
