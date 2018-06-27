@@ -67,50 +67,65 @@ body {
     width: 60px;
     margin-right: 28px;
 }
-.frame {
-    align-items: center;
-    justify-content: center;
+.training {
+    justify-content: space-between;
+    width: 70%;
+    margin: 20vh auto;
 }
-.frame__content {
+.training__content {
     text-align: center;
 }
-.frame__video {
+.training__video {
     border: 5px solid #FF8526;
     border-radius: 10px;
     overflow: hidden;
     margin: 20px 0;
 }
-.frame__content h3 {
+.training__poster {
+    margin-top: 10px;
+    border: 5px solid #FF8526;
+    border-radius: 10px;
+    width: 560px;
+    height: 340px;
+    background: url("images/agile_conference.jpg") center no-repeat;
+    background-size: cover;
+}
+.training__content h3 {
     font-size: 24px;
     font-weight: 900;
 }
-.courses-table {
-    width: 90%;
-    margin-right: 40px;
-    table-layout: fixed;
-    border-collapse: collapse;
-    border: 2px solid #FF8526;
-}
-.courses-table thead {
-    font-weight: 700;
-    border-bottom: 1px solid rgb(255, 133, 19);
-}
-.courses-table td {
-    padding: 10px 15px;
-    font-size: 16px;
-}
-.courses-table td:first-of-type {
-    width: 30%;
-    border-right: 1px solid rgb(255, 133, 19);
-}
-.courses-table tr:nth-of-type(even) {
-    background: #FFAE22;
-}
-.education h1 {
+h1 {
     text-align: center;
 }
+.education {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    min-height: 60vh;
+    align-items: center;
+    margin: 0 auto;
+}
+.education__item {
+    border: 5px solid #FF8526;
+    border-radius: 10px;
+    width: 320px;
+    height: 300px;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.education__item:hover {
+    background: #eee;
+}
+.education__item img {
+    width: 60%;
+    margin-bottom: 30px;
+}
 .list {
-    width: 90%;
+    width: 70%;
     border: 3px solid #FF8526;
     border-radius: 10px;
     margin: 20px auto;
@@ -130,6 +145,16 @@ body {
     width: 120px;
     font-size: 12px;
 }
+
+.feedback {
+    padding-top: 40px;
+    justify-content: center;
+}
+.feedback iframe {
+    width: 50%;
+    height: 100vh;
+}
+
 @media only screen and (max-width: 950px) {
     .list {
         width: 100%;
