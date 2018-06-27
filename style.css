@@ -18,11 +18,11 @@ body {
 }
 
 .container {
-    height: 100vh;
     display: flex;
     width: 100%;
 }
 .intro {
+    height: 100vh;
     background: url('images/agile_bg.png') center no-repeat;
     background-size: cover;
     justify-content: center;
@@ -42,15 +42,14 @@ body {
 .benefits {
     align-items: center;
     justify-content: space-between;
-    padding-left: 6vw;
-    height: 90vh;
+    padding: 40px;
+    margin-bottom: 40px;
 }
 .benefits__poster {
     width: 55%;
 }
 .benefits-list {
-    width:100%;
-    margin-right: 6vw;
+    width: 40%;
 }
 .benefits-list__item {
     display: flex;
@@ -85,10 +84,6 @@ body {
     font-size: 24px;
     font-weight: 900;
 }
-.education {
-    align-items: center;
-    justify-content: center;
-}
 .courses-table {
     width: 90%;
     margin-right: 40px;
@@ -110,4 +105,58 @@ body {
 }
 .courses-table tr:nth-of-type(even) {
     background: #FFAE22;
+}
+.education h1 {
+    text-align: center;
+}
+.list {
+    width: 90%;
+    border: 3px solid #FF8526;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    text-align: left;
+}
+.list li:nth-of-type(even) {
+    background: #eee;
+}
+.list__desc {
+    text-align: right;
+    width: 120px;
+    font-size: 12px;
+}
+@media only screen and (max-width: 950px) {
+    .list {
+        width: 100%;
+    }
+    iframe {
+        width: 320px;
+        height: 180px;
+    }
+    .benefits {
+        padding: 0;
+        flex-flow: column;
+        justify-content: center;
+    }
+    .benefits-list {
+        width: 90%;
+    }
+    .benefits-list__item {
+        margin: 15px 0;
+    }
+    .benefits-list__item img {
+        width: 40px;
+    }
+    .benefits-list__item p {
+        font-size: 14px;
+    }
+    .benefits__poster {
+        width: 100%;
+        margin: 10 0;
+    }
 }
