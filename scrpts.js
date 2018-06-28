@@ -185,12 +185,24 @@ const data = {
     ]
 }
 $("document").ready(function() {
-    $(".education__item").foreach(function() {
+    $(".education__item").click(function() {
         dataType = data[$(this).attr("data-title")]
-        $(this).click(function() {
-            for(const p in dataType) {
-                
-            }
-        })
+        $(".education__dialog .list").html("")
+        for (const p in dataType) {
+            $(".education__dialog .list").append(
+                "<li>" +
+                "<a href='" + dataType[p].href + "' class='list__title' target='_blank'>" + dataType[p].title + "</a> \
+                        <div class='list__desc'>"+ dataType[p].desc + "</div> \
+                    </li>"
+            )
+        }
+        $(".education__dialog").css({ visibility: "visible", opacity: 1 })
+    })
+    $(".education__dialog").click(function(e) {
+        if (e.target.className !== this.className) return;
+        $(".education__dialog").css({
+          opacity: 0,
+          visibility: "hidden"
+        });
     })
 });

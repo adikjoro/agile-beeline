@@ -23,7 +23,7 @@ body {
 }
 .intro {
     height: 100vh;
-    background: url('images/agile_bg.png') center no-repeat;
+    background: url('images/idle_background-01.png') center no-repeat;
     background-size: cover;
     justify-content: center;
     align-items: center;
@@ -33,11 +33,11 @@ body {
 }
 .intro__subheader {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 10px;
-    font-size: 24px;
-    font-weight: 300;
-    color: #555;
+    font-size: 20px;
+    font-weight: 400;
+    color: #39454C;
 }
 .benefits {
     align-items: center;
@@ -68,31 +68,32 @@ body {
     margin-right: 28px;
 }
 .training {
-    justify-content: space-between;
-    width: 70%;
-    margin: 20vh auto;
+    justify-content: center;
+    padding: 25vh 0;
 }
 .training__content {
     text-align: center;
 }
 .training__video {
     border: 5px solid #FF8526;
+    width: 560px;
     border-radius: 10px;
     overflow: hidden;
-    margin: 20px 0;
+}
+.training__present {
+    margin-right: 5vw;
 }
 .training__poster {
-    margin-top: 10px;
     border: 5px solid #FF8526;
     border-radius: 10px;
     width: 560px;
-    height: 340px;
+    height: 330px;
     background: url("images/agile_conference.jpg") center no-repeat;
     background-size: cover;
 }
-.training__content h3 {
-    font-size: 24px;
-    font-weight: 900;
+.training h4 {
+    text-align: center;
+    height: 50px;
 }
 h1 {
     text-align: center;
@@ -124,11 +125,28 @@ h1 {
     width: 60%;
     margin-bottom: 30px;
 }
+.education__dialog {
+    transition: all .3s ease;
+    height: 100vh;
+    width: 100%;
+    padding: 40px;
+    background: rgba(0,0,0, .4);
+    position: fixed;
+    left: 0; top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
 .list {
+    background: white;
     width: 70%;
     border: 3px solid #FF8526;
     border-radius: 10px;
     margin: 20px auto;
+    max-height: 80vh;
+    overflow-y: auto;
 }
 .list li {
     display: flex;
