@@ -100,11 +100,9 @@ h1 {
 }
 .education {
     display: flex;
-    justify-content: space-between;
-    width: 60%;
+    justify-content: center;
     min-height: 60vh;
     align-items: center;
-    margin: 0 auto;
 }
 .education__item {
     border: 5px solid #FF8526;
@@ -117,6 +115,7 @@ h1 {
     text-align: center;
     cursor: pointer;
     user-select: none;
+    margin: 4vw;
 }
 .education__item:hover {
     background: #eee;
@@ -139,6 +138,19 @@ h1 {
     visibility: hidden;
     opacity: 0;
 }
+.close {
+    position: absolute;
+    right: 20px; top: 20px;
+    z-index: 5;
+    cursor: pointer;
+    background: rgba(255, 255, 255,.5);
+    border-radius: 50%;
+    height: 50px;
+    padding: 10px;
+}
+.close img {
+    width: 30px;
+}
 .list {
     background: white;
     width: 70%;
@@ -154,6 +166,9 @@ h1 {
     align-items: center;
     padding: 15px;
     text-align: left;
+}
+.list li a {
+    color: darkblue;
 }
 .list li:nth-of-type(even) {
     background: #eee;
@@ -174,6 +189,14 @@ h1 {
 }
 
 @media only screen and (max-width: 950px) {
+    .intro__logo {
+        width: 150px;
+    }
+    .intro__subheader {
+        font-size: 12px;
+        width: 150px;
+        margin-left: 0;
+    }
     .list {
         width: 100%;
     }
@@ -201,5 +224,31 @@ h1 {
     .benefits__poster {
         width: 100%;
         margin: 10 0;
+    }
+    .education__item {
+        width: 280px;
+        height: 260px;
+    }
+    .education, .training {
+        flex-flow: column;
+        padding: 20px;
+    }
+    .training__video, .training__poster {
+        width: 320px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .training__present {
+        margin-right: 0;
+    }
+    .training__poster {
+        height: 200px;
+    }
+    .training h4 {
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .feedback iframe {
+        width: 100%;
     }
 }

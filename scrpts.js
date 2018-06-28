@@ -198,8 +198,7 @@ $("document").ready(function() {
         }
         $(".education__dialog").css({ visibility: "visible", opacity: 1 })
     })
-    $(".education__dialog").click(function(e) {
-        if (e.target.className !== this.className) return;
+    $(".close").click(function(e) {
         $(".education__dialog").css({
           opacity: 0,
           visibility: "hidden"
