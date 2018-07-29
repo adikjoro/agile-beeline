@@ -44,11 +44,6 @@ const data = {
         },
         { title: "Agile для новичков", desc: "", href: "http://www.agilebasics.ru/" },
         {
-            title: "Основы Agile: метод Scrum. Курс читает Асхат Уразбаев.",
-            desc: "2 часа 10 минут",
-            href: "https://webtutor.beeline.kz/view_doc.html?mode=course&doc_id=6429184362312526909&object_id=6436948958405156840"
-        },
-        {
             title:
                 "Agile & Scrum – знакомство и легкое погружение. Курс читает Артем Быковец",
             desc: "1 час 37 минут",
@@ -204,4 +199,14 @@ $("document").ready(function() {
           visibility: "hidden"
         });
     })
+
+    $(".anchor").click(function() {
+        var link = document.createElement("a");
+        if ($(this).attr("data-link")) {
+            link.href = "#" + $(this).attr("data-link")
+            link.click()
+        }
+        console.log(link)
+    })
+    
 });
