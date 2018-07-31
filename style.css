@@ -17,8 +17,51 @@ body {
     background: white;
 }
 
-.anchor {
+.anchor, .page-link {
     cursor: pointer;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
+    border: 2px solid #FF8526;
+    /* box-shadow: 3px 3px 15px rgba(0,0,0,0.2); */
+    padding: 25px 15px;
+}
+
+.course-section {
+    padding-bottom: 80px;
+}
+
+.course__title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.course__list {
+    max-width: 70%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.course__link {
+    font-weight: 500;
+    color: #FF8526;
+    text-decoration: underline;
+}
+
+.course__list li {
+    list-style-type: decimal;
+    line-height: 1.7;
+}
+
+.course__subtitle {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.1em;
+    line-height: 1.4;
 }
 
 .container {

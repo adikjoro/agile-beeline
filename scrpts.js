@@ -26,6 +26,73 @@ const data = {
             href: "https://www.scrumstudy.com/freeresources/scrum-agile-glossary"
         }
     ],
+    recommendations: [
+        {
+            title: "«Искусство программирования». Дональд Кнут",
+            desc: "Рекомендует Билл Гейтс",
+            href: "https://www.ozon.ru/context/detail/id/1335648/"
+        },
+        {
+            title: "«Источник». Айн Рэнд",
+            desc: "Рекомендует Трэвис Каланик",
+            href: "https://www.ozon.ru/context/detail/id/4432885/"
+        },
+        {
+            title: "«Основание». Айзек Азимов",
+            desc: "Рекомендует Илон Маск",
+            href: "https://www.ozon.ru/context/detail/id/26082214/"
+        },
+        {
+            title: "Мальчики в лодке",
+            desc: "Рекомендует Сатья Наделла",
+            href: "https://www.ozon.ru/context/detail/id/141139341/"
+        },
+        {
+            title: "Автобиография Николы Теслы",
+            desc: "Рекомендует Ларри Пейдж",
+            href: "http://biographera.net/biography.php?id=13"
+        },
+        {
+            title: "Автобиография Ричарда Фейнмана",
+            desc: "Рекомендует Сергей Брин",
+            href: "https://ru.wikipedia.org/wiki/%D0%A4%D0%B5%D0%B9%D0%BD%D0%BC%D0%B0%D0%BD,_%D0%A0%D0%B8%D1%87%D0%B0%D1%80%D0%B4_%D0%A4%D0%B8%D0%BB%D0%BB%D0%B8%D0%BF%D1%81"
+        },
+        {
+            title: "Биография Наполеона Бонапарта",
+            desc: "Рекомендует Ларри Эллисон",
+            href: "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%BF%D0%BE%D0%BB%D0%B5%D0%BE%D0%BD_I"
+        },
+        {
+            title: "Харизма. Как влиять, убеждать и вдохновлять",
+            desc: "Рекомендует Марисса Майер",
+            href: "https://www.ozon.ru/context/detail/id/20266767/"
+        },
+        {
+            title: "«На исходе дня». Кадзуо Исигуро",
+            desc: "Рекомендует Джефф Безос",
+            href: "https://mybook.ru/author/kadzuo-isiguro/ostatok-dnya/read/"
+        },
+        {
+            title: "«Илиада» и «Одиссея» Гомера. «Энеида» Вергилия.",
+            desc: "Рекомендует Марк Цукенберг",
+            href: ""
+        },
+        {
+            title: "«Бизнес с нуля» Эрик Рис и «Раскройте свои силы» Маркуса Бакингема.",
+            desc: "Рекомендует Шерил Сэндберг",
+            href: ""
+        },
+        {
+            title: "«Состязание со временем». Джордж Сталк",
+            desc: "Рекомендует Тим Кук",
+            href: ""
+        },
+        {
+            title: "«Будь здесь и сейчас». Рам Дасса",
+            desc: "Рекомендует Стив Джобс",
+            href: ""
+        },
+    ],
     online: [
         {
             title: "Предпосылки появления agile. Курс читает Дмитрий Павлов ",
@@ -193,6 +260,7 @@ $("document").ready(function() {
         }
         $(".education__dialog").css({ visibility: "visible", opacity: 1 })
     })
+
     $(".close").click(function(e) {
         $(".education__dialog").css({
           opacity: 0,
@@ -201,12 +269,24 @@ $("document").ready(function() {
     })
 
     $(".anchor").click(function() {
-        var link = document.createElement("a");
+        // var link = document.createElement("a");
         if ($(this).attr("data-link")) {
-            link.href = "#" + $(this).attr("data-link")
+            var target = $(this).attr("data-link")
+            $target = $(target)
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing', function() {
+                window.location.hash = target
+            })
+        }
+    })
+
+    $(".page-link").click(function(e) {
+        if ($(this).attr("data-link")) {
+            var link = document.createElement("a")
+            link.target = "_blank"
+            link.href = $(this).attr("data-link")
             link.click()
         }
-        console.log(link)
     })
-    
 });
