@@ -1,0 +1,26 @@
+.table-wrapper {
+    max-width: 670px;
+    padding: 0 15px;
+    margin: 0 auto;
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 60px;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    table-layout: fixed;
+    text-align: center;
+}
+
+.course-table__link a {
+    text-decoration: underline;
+    color: rgb(87, 102, 236);
+    font-weight: 500;
+}
+
+.course-table th, td {
+    border: 1px solid rgb(141, 139, 139);
+    padding: 8px;
+}

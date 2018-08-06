@@ -21,12 +21,34 @@ body {
     cursor: pointer;
 }
 
+.table-wapper {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.course-table__link a {
+    text-decoration: underline;
+    color: rgb(87, 102, 236);
+    font-weight: 500;
+}
+
+.course-table th, td {
+    border: 1px solid rgb(141, 139, 139);
+    padding: 8px;
+}
+
 .wrapper {
     max-width: 1000px;
     margin: 0 auto;
     border-radius: 8px;
     border: 2px solid #FF8526;
-    /* box-shadow: 3px 3px 15px rgba(0,0,0,0.2); */
     padding: 25px 15px;
 }
 
