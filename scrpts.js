@@ -28,12 +28,12 @@ const data = {
     {
       title: 'Путь Скрам мастера',
       desc: '225 стр',
-      href: 'http://agilemanifesto.org/iso/ru/manifesto.html'
+      href: 'https://drive.google.com/drive/folders/1_GgkLu6VLxUMo28zI1AKTp2uixl6l9QC?usp=sharing'
     },
     {
       title: 'Коучинг agile команд',
       desc: 'epub',
-      href: 'http://agilemanifesto.org/iso/ru/manifesto.html'
+      href: 'https://drive.google.com/drive/folders/1_GgkLu6VLxUMo28zI1AKTp2uixl6l9QC?usp=sharing'
     },
   ],
   recommendations: [
